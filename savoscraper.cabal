@@ -1,0 +1,103 @@
+-- This file has been generated from package.yaml by hpack version 0.17.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           savoscraper
+version:        0.0.0
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+library
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base
+    , base-compat
+    , warp
+    , http-media
+    , lucid
+    , time
+    , string-conversions
+    , bytestring
+    , attoparsec
+    , mtl
+    , random
+    , js-jquery
+    , wai
+    , http-types
+    , transformers
+    , http-client
+    , scalpel
+    , servant
+    , servant-server
+    , dates
+    , template
+    , text
+  exposed-modules:
+      Lib
+  default-language: Haskell2010
+
+executable savoscraper
+  main-is: app/Main.hs
+  ghc-options: -Wall
+  build-depends:
+      base
+    , base-compat
+    , warp
+    , http-media
+    , lucid
+    , time
+    , string-conversions
+    , bytestring
+    , attoparsec
+    , mtl
+    , random
+    , js-jquery
+    , wai
+    , http-types
+    , transformers
+    , http-client
+    , scalpel
+    , servant
+    , servant-server
+    , dates
+    , template
+    , text
+    , savoscraper
+  default-language: Haskell2010
+
+test-suite spec
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs:
+      test
+  ghc-options: -Wall
+  build-depends:
+      base
+    , base-compat
+    , warp
+    , http-media
+    , lucid
+    , time
+    , string-conversions
+    , bytestring
+    , attoparsec
+    , mtl
+    , random
+    , js-jquery
+    , wai
+    , http-types
+    , transformers
+    , http-client
+    , scalpel
+    , servant
+    , servant-server
+    , dates
+    , template
+    , text
+    , hspec
+    , graphie
+    , servant-client
+  default-language: Haskell2010

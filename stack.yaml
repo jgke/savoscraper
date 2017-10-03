@@ -1,0 +1,7 @@
+resolver: lts-9.6
+
+packages:
+- .
+
+extra-deps:
+- dates-0.2.2.1

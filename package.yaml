@@ -1,0 +1,47 @@
+name: savoscraper
+
+ghc-options: -Wall
+
+tests:
+  spec:
+    main: Spec.hs
+    source-dirs:
+      - test
+    dependencies:
+      - hspec
+      - graphie
+      - servant-client
+
+library:
+  source-dirs:
+    - src
+
+executables:
+  savoscraper:
+    main: app/Main.hs
+    dependencies:
+      - savoscraper
+
+dependencies:
+  - base
+  - base-compat
+  - warp
+  - http-media
+  - lucid
+  - time
+  - string-conversions
+  - bytestring
+  - attoparsec
+  - mtl
+  - random
+  - js-jquery
+  - wai
+  - http-types
+  - transformers
+  - http-client
+  - scalpel
+  - servant
+  - servant-server
+  - dates
+  - template
+  - text
