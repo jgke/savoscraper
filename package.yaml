@@ -45,3 +45,4 @@ dependencies:
   - dates
   - template
   - text
+  - servant-lucid
